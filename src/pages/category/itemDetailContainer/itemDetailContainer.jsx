@@ -4,18 +4,22 @@ import Button from "react-bootstrap/Button";
 const ItemDetailContainer = ({agregarAlCarrito}) => {
     const {id} = useParams()
     const item = itemsBautismo.find((articulo) => articulo.id == id)
-    
-    return (
-        <div>
-            <img src={item.img} alt={item.articulo} style={{height: "18rem"}} />
-            <aside>
-                <div>
-                    <h3>{item.id} - {item.articulo}</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam delectus dolore molestias voluptates ea cum, mollitia numquam modi! Porro quaerat laudantium sunt nobis suscipit quas inventore necessitatibus ipsam magnam consequuntur.</p>
-                </div>
-            <Button onClick={agregarAlCarrito}>Comprar</Button>
-            </aside>
-        </div>
-    )
+    const handleClic = () => {
+        agregarAlCarrito()
+      }
+        return (
+            <div className="d-flex justify-content-evenly align-items-center p-3" style={{height:"90vh"}}>
+                <img src={item.img} alt={item.articulo} style={{height: "18rem"}} className="p-3" />
+                <aside>
+                    <div>
+                        <h3 className="text-center">{item.id} - {item.articulo}</h3>
+                        <p>{item.descripcion}</p>
+                    </div>
+                <Button onClick={handleClic}>Comprar</Button>
+                <span>${item.precio}</span>
+                </aside>
+            </div>
+        )
+
 }
 export {ItemDetailContainer}

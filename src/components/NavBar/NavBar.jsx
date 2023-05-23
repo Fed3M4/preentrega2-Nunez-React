@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { CartWidget } from '../CartWidget/CartWidget';
 import { Link } from "react-router-dom";
 
-function NavBar({car}) {
+function NavBar({countCar}) {
   return (
     <Navbar bg="dark" variant="dark" expand="xl">
       <Container>
@@ -29,7 +29,7 @@ function NavBar({car}) {
           </Nav>
         </Navbar.Collapse>
       </Container>
-      <CartWidget countCar = {car}/>
+      <CartWidget countCar2 = {countCar}/>
     </Navbar>
   );
 }
