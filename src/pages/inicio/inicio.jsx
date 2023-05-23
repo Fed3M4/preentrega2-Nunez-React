@@ -1,12 +1,18 @@
-import Imagenbb from "../../assets/img/67645.jpg";
+import bautismo from "../../assets/img/bautismos.jpg";
+import escuela from "../../assets/img/escuela.jpg";
 
 const Inicio =({greeting})=> {
     return (
-        <main className="d-flex align-items-center flex-column">
-            <h2> {greeting}</h2>
-            <img src={Imagenbb} alt="imagen" className="cartelera w-50"/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam veniam nesciunt, quasi voluptate quae explicabo, itaque cum fugiat nostrum ad. Quaerat ab neque consectetur? Dignissimos, totam! Dicta, vero voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil dolorum facilis rerum cupiditate tempora inventore laudantium aut, qui quisquam suscipit. Ipsa dolore alias quia eaque beatae similique nulla praesentium?</p>
-        </main>
+        <main className="d-flex justify-content-evenly align-items-center" style={{minHeight: "90vh"}}>
+        <div>
+          <img src={bautismo} alt="Bautismos" style={{ width: "18rem" }}/>
+          <h4>Bautismos, fiestas y eventos</h4>
+        </div>
+        <div>
+          <img src={escuela} alt="Escuela" style={{ width: "18rem", height: "12rem" }}/>
+          <h4>Ropa escolar para niños y niñas</h4>
+        </div>
+      </main>
 
     )
 

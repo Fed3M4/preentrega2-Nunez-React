@@ -13,7 +13,7 @@ function NavBar({car}) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to={'/'}>Inicio</Nav.Link>
+            <Nav.Link as={Link} to={'/inicio'}>Inicio</Nav.Link>
             <Nav.Link as={Link} to={'/nosotros'}>Nosotros</Nav.Link>
             <NavDropdown title="Tienda" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Bebes</NavDropdown.Item>
@@ -22,7 +22,7 @@ function NavBar({car}) {
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Escuela</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to={'/category/bautismos'}>
+              <NavDropdown.Item as={Link} to={'/category/bautismos/:id'}>
                 Bautismos
               </NavDropdown.Item>
             </NavDropdown>

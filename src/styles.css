@@ -1,3 +1,10 @@
-.cartelera {
-    height: 500px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background-image: url(./assets/img/67645.jpg);
+    background-size: 100%;
 }
