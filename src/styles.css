@@ -8,3 +8,6 @@ body {
     background-image: url(./assets/img/67645.jpg);
     background-size: 100%;
 }
+main {
+    min-height: 90vh;
+}

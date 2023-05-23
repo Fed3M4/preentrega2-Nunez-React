@@ -12,12 +12,12 @@ const ItemListContainer = ({ sumCarr }) => {
   };
 
   return (
-    <main className="d-flex justify-content-evenly flex-nowrap">
-      <div className="card-list d-flex justify-content-center flex-nowrap">
+    <main className="d-flex justify-content-evenly flex-nowrap w-100">
+      <div className="card-list d-flex justify-content-evenly align-items-center flex-nowrap w-100">
         {itemsBautismo.map((art) => (
           <div onClick={()=> mostrarCard(art.id)}>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={art.img} />
+            <Card style={{ width: "18rem", height: "27rem"}}>
+              <Card.Img variant="top" src={art.img} style={{height: "12rem"}}/>
               <Card.Body>
                 <Card.Title> <Link to={`/category/bautismos/item/${art.id}`}>{art.id} - {art.articulo}</Link>
                 </Card.Title>
