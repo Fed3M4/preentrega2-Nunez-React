@@ -3,13 +3,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { CartWidget } from '../CartWidget/CartWidget';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import logo from '../../assets/img/Logo-mama.png'
 
 function NavBar({countCar}) {
   return (
     <Navbar bg="dark" variant="dark" expand="xl">
       <Container>
-        <Navbar.Brand as={Link} to={'/'}>Tienda LOLA</Navbar.Brand>
+        <Navbar.Brand><NavLink to={'/'}><img src={logo} alt="" style={{height:"4rem"}}/></NavLink></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

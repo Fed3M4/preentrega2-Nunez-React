@@ -34,7 +34,7 @@ const ItemListContainer = ({ agregarAlCarrito }) => {
                 <Card.Body>
                   <Card.Title>
                     {" "}
-                    <Link to={`/category/bautismos/item/${art.id}`}>
+                    <Link to={`/category/bautismos/item/${art.id}`} style={{textDecoration:"none"}}>
                       {art.id} - {art.articulo}
                     </Link>
                   </Card.Title>
